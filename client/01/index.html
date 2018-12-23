@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mocky Test</title>
+  <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../lib/bootstrap-table/bootstrap-table.min.css" />
+  <script type="text/javascript" src="../lib/jquery/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../lib/bootstrap-table/bootstrap-table.min.js"></script>
+  <script type="text/javascript" src="../common/js/common.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">Mocky Test</div>
+      <div class="panel-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-sm-2">Users: </label>
+            <div class="col-sm-10">
+              <div id="toolbar">
+                <input class="btn btn-default" type="button" id="deleteButton" value="delete" />
+                <input class="btn btn-default" type="button" id="addModalButton" value="add" />
+              </div>
+              <table id="userTable"></table>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalTitile" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="modal-title" id="editModalTitile">Add user</h3>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" role="form" onsubmit="return false;">
+            <div class="form-group">
+              <label class="control-label col-sm-2">Name: </label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Age: </label>
+              <div class="col-sm-10">
+                <input class="form-control" type="number" id="age" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Gender: </label>
+              <div class="col-sm-10">
+                <select class="form-control" id="gender">
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="addButton">Add</button>
+          <button type="button" class="btn btn-primary" id="updateButton">Update</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

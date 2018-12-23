@@ -1,0 +1,35 @@
+{
+    "total": 22,
+    "list": [
+        {
+            "userId": 6,
+            "name": "Cyrus",
+            "age": "31",
+            "gender": "male"
+        },
+        {
+            "userId": 7,
+            "name": "Olive",
+            "age": "67",
+            "gender": "female"
+        },
+        {
+            "userId": 8,
+            "name": "Jasmine",
+            "age": "55",
+            "gender": "female"
+        },
+        {
+            "userId": 9,
+            "name": "Dominic",
+            "age": "25",
+            "gender": "male"
+        },
+        {
+            "userId": 10,
+            "name": "Dolly",
+            "age": "33",
+            "gender": "female"
+        }
+    ]
+}
